@@ -1,3 +1,7 @@
+body {
+    background-color: #5599ec81;
+}
+
 header {
     background-color: #00bfff;
     color: rgba(0, 0, 0, 0.881);
@@ -45,7 +49,7 @@ nav a:hover {
 .container2 {
     width: 80%;
     height: 42rem;
-    background-color: #5599ec81;
+    background-color: #64a4f363;
     display: flex;
     justify-content: center;
     align-items: center;
