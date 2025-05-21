@@ -91,3 +91,75 @@ footer h2 {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .container2 {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 75%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 70%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
