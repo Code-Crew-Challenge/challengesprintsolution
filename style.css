@@ -1,32 +1,40 @@
+/* Estilo base */
 body {
     background-color: #5599ec81;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #00bfff;
     color: rgba(0, 0, 0, 0.881);
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.1rem 1rem rgba(0,0,0,0.1);
-    height: 4rem;
-    width: 96.5%;
-    margin-top: 0.8%;
+    width: 100%;
+    flex-direction: column;
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
 }
 
 nav a {
     color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 1rem;
-      transition: color 0.3s, border-bottom 0.3s;
-      border-bottom: 0.1rem solid transparent;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 0.1rem solid transparent;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -36,26 +44,26 @@ nav a:hover {
 
 .container {
     width: 70%;
-    height: 0.1rem;
     background-color: #64a4f3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    margin-left: 15rem;
+    padding: 1.5rem;
     border-radius: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
 }
 
 .container2 {
     width: 80%;
-    height: 42rem;
     background-color: #64a4f363;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin-top: 3rem;
+    margin: 2rem auto;
     border-radius: 1rem;
+    min-height: 20rem;
 }
 
 footer {
@@ -63,24 +71,22 @@ footer {
     color: black;
     padding: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
     text-align: center;
     box-shadow: 0 -0.1rem 0.7rem rgba(0, 0, 0, 0.1);
+    gap: 1rem;
 }
 
-footer h2 {
-    margin-bottom: 0.7rem;
-      font-size: 1.5rem;
-    }
+footer h3 {
+    margin: 0.5rem 0;
+}
 
-    .contact-info {
-      gap: 5rem;
-      display: flex;
-      flex-direction: right;
-    }
-
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 .fade-in {
     opacity: 0;
@@ -97,49 +103,40 @@ footer h2 {
         font-size: 2rem;
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin-left: 0;
-        padding: 1rem;
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 1rem;
     }
 
+    .container,
     .container2 {
         width: 90%;
-        height: auto;
         padding: 1rem;
-        margin-top: 2rem;
-    }
-
-    nav a {
-        margin: 0.5rem 0;
-        font-size: 0.9rem;
     }
 
     footer {
-        flex-direction: column;
-        gap: 1rem;
         padding: 1rem;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        gap: 0.5rem;
     }
 }
 
 @media (min-width: 600px) {
     .container {
         width: 85%;
-        margin-left: auto;
-        margin-right: auto;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 768px) {
     .container {
         width: 80%;
+    }
+
+    header h1 {
+        font-size: 3rem;
     }
 }
 
@@ -148,8 +145,8 @@ footer h2 {
         width: 75%;
     }
 
-    header h1 {
-        font-size: 3rem;
+    .container2 {
+        width: 80%;
     }
 }
 
@@ -162,4 +159,3 @@ footer h2 {
         font-size: 4rem;
     }
 }
-
