@@ -144,14 +144,17 @@ a {
 
 .minha-imagemG {
     margin-left: 100px;
+    border-radius: 20px;
 }
 
 .minha-imagemP {
     margin-right: 80px;
+    border-radius: 20px;
 }
 
 .minha-imagemT {
     margin-left: 120px;
+    border-radius: 20px;
 }
 
 
