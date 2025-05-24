@@ -32,3 +32,7 @@ ESTRUTURA:
 ENDEREÇO DO REPOSITÓRIO: 
  
  https://github.com/Code-Crew-Challenge/challengesprintsolution.git
+
+LINK DIRETO DO SITE:
+
+ https://code-crew-challenge.github.io/challengesprintsolution/
